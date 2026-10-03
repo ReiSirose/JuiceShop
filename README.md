@@ -4,7 +4,7 @@ This repository contains a lightweight, full-stack login application inspired by
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Juice Shop UI Theme:** Styled using CSS to mirror the OWASP Juice Shop dark-mode login interface.
 * **Client-Side Validation (`public/app.js`):**
@@ -18,7 +18,7 @@ This repository contains a lightweight, full-stack login application inspired by
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 JuiceShop/
@@ -29,7 +29,7 @@ JuiceShop/
 └── server.js            # Zero-dependency Node.js HTTP server & backend API
 ```
 
-## ⚡ How to Run
+## How to Run
 
 ### Option 1: Quick Launch in GitHub Codespaces (No Installation Required)
 
