@@ -1,19 +1,29 @@
-# OWASP Juice Shop - Login Form
+# OWASP Juice Shop - Login Form & Validation
 
-This repository contains a simple front-end login form inspired by OWASP Juice Shop, complete with dual-layer validation (client-side and server-side).
+This repository contains a lightweight, full-stack login application inspired by OWASP Juice Shop, built for **CSCE 477/500: Cybersecurity Risk (HW 2-B)**. It demonstrates dual-layer input validation (client-side and server-side) without relying on external npm dependencies.
 
-## Features
-- **UI Design**: Styled with Juice Shop's dark theme aesthetics.
-- **Client-Side Validation**:
-  - Prevents empty form submissions.
-  - Verifies email includes `@`.
-  - Enforces minimum password length of 8 characters.
-- **Server-Side Validation**:
-  - Validates request payloads on the Express server (`/api/login`) to guard against bypassed browser scripts.
+---
 
-## Setup & Execution
+## 🚀 Features
 
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/your-username/juice-shop-login-form.git](https://github.com/your-username/juice-shop-login-form.git)
-   cd juice-shop-login-form
+* **Juice Shop UI Theme:** Styled using CSS to mirror the OWASP Juice Shop dark-mode login interface.
+* **Client-Side Validation (`public/app.js`):**
+  * Prevents empty submissions.
+  * Validates email format (ensures it contains `@`).
+  * Enforces minimum password length (at least 8 characters).
+* **Server-Side Validation (`server.js`):**
+  * Re-verifies all submission data on the backend POST endpoint (`/api/login`).
+  * Protects against attackers bypassing browser-based JavaScript validations using API tools (e.g., Postman, Curl).
+* **Zero External Dependencies:** Built entirely with native Node.js core modules (`http`, `fs`, `path`).
+
+---
+
+## 📁 Repository Structure
+
+```text
+JuiceShop/
+├── public/
+│   ├── index.html       # UI interface for the login form
+│   └── app.js           # Client-side validation & API fetch request logic
+├── README.md            # Project documentation and setup guide
+└── server.js            # Zero-dependency Node.js HTTP server & backend API
