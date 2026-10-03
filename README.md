@@ -27,3 +27,21 @@ JuiceShop/
 │   └── app.js           # Client-side validation & API fetch request logic
 ├── README.md            # Project documentation and setup guide
 └── server.js            # Zero-dependency Node.js HTTP server & backend API
+```
+
+## ⚡ How to Run
+
+### Option 1: Quick Launch in GitHub Codespaces (No Installation Required)
+
+1. At the top of this repository page, click the green **Code** button.
+2. Select the **Codespaces** tab and click **Create codespace on main**.
+3. Once the environment terminal opens, run:
+   ```bash
+   node server.js
+
+### Option 2: Run Locally
+```bash
+git clone https://github.com/ReiSirose/JuiceShop.git
+cd JuiceShop
+node server.js
+```
