@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OWASP Juice Shop - Login</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+    body { background-color: #1e1e2f; color: #ffffff; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+    .login-card { background-color: #2a2a40; padding: 2.5rem; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.4); width: 100%; max-width: 400px; }
+    .login-card h2 { color: #e91e63; text-align: center; margin-bottom: 0.5rem; }
+    .login-card p { color: #a0a0b0; text-align: center; font-size: 0.9rem; margin-bottom: 2rem; }
+    .form-group { margin-bottom: 1.5rem; }
+    .form-group label { display: block; margin-bottom: 0.5rem; font-size: 0.9rem; }
+    .form-group input { width: 100%; padding: 0.75rem; border-radius: 5px; border: 1px solid #444466; background-color: #1a1a2e; color: #fff; font-size: 1rem; }
+    .form-group input:focus { outline: none; border-color: #e91e63; }
+    button { width: 100%; padding: 0.8rem; border: none; border-radius: 5px; background-color: #e91e63; color: white; font-size: 1rem; font-weight: bold; cursor: pointer; }
+    button:hover { background-color: #c2185b; }
+    #alertBox { margin-top: 1.2rem; padding: 0.75rem; border-radius: 5px; display: none; font-size: 0.88rem; text-align: center; }
+    .alert-error { background-color: #5c1d24; color: #f8d7da; border: 1px solid #842029; }
+    .alert-success { background-color: #0f5132; color: #d1e7dd; border: 1px solid #0f5132; }
+  </style>
+</head>
+<body>
+  <div class="login-card">
+    <h2>OWASP Juice Shop</h2>
+    <p>Login to your account</p>
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="email">Customer Email</label>
+        <input type="email" id="email" placeholder="user@example.com">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••">
+      </div>
+      <button type="submit">Log In</button>
+    </form>
+    <div id="alertBox"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
